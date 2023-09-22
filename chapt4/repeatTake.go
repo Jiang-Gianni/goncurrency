@@ -1,6 +1,8 @@
 package chapt4
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Repeat(done <-chan interface{}, values ...interface{}) <-chan interface{} {
 	valueChan := make(chan interface{})
