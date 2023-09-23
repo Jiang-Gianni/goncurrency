@@ -4,13 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Jiang-Gianni/goncurrency/chapt4"
+	"github.com/Jiang-Gianni/goncurrency/chapt5"
 )
 
 func main() {
 	defer func(start time.Time) {
-		fmt.Println("since start (ms): ", time.Since(start))
+		fmt.Println("since start: ", time.Since(start))
 	}(time.Now())
-	chapt4.ExampleBridgeChannel()
-
+	chapt5.Heartbeat()
 }
