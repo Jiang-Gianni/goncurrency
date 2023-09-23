@@ -11,5 +11,5 @@ func main() {
 	defer func(start time.Time) {
 		fmt.Println("since start: ", time.Since(start))
 	}(time.Now())
-	chapt5.Heartbeat()
+	chapt5.MultiDimensionRateLimiter()
 }
